@@ -1,4 +1,4 @@
-﻿using LinkedList.Core;   
+﻿using LinkedList.Core;
 
 var list = new DoublyLinkedList<string>();
 string option;
