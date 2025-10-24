@@ -1,6 +1,6 @@
 ﻿using LinkedList.Core;
 
-var list = new DoublyLinkedList<string>();
+var list = new DoublyLinkedList<string>(); 
 string option;
 
 do
