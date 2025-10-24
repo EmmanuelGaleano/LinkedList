@@ -125,7 +125,7 @@ namespace LinkedList.Core
             values.Reverse();
 
             // Rebuild list manually (append to tail)
-            Clear();
+            ClearList();
             foreach (var val in values)
             {
                 var node = new DoubleNode<T>(val);
@@ -313,10 +313,13 @@ namespace LinkedList.Core
         // -------------------------------
         // Utility: clear the list
         // -------------------------------
-        private void Clear()
+        public void ClearList()
         {
             _head = null;
             _tail = null;
+            Console.WriteLine("The list has been cleared.");
         }
+
     }
 }
+

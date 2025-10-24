@@ -1,6 +1,6 @@
 ﻿using LinkedList.Core;
 
-var list = new DoublyLinkedList<string>(); 
+var list = new DoublyLinkedList<string>();
 string option;
 
 do
@@ -50,6 +50,10 @@ do
             list.RemoveAll(Console.ReadLine()!);
             break;
 
+        case "10":
+            list.ClearList();
+            break;
+
         case "0":
             Console.WriteLine("Bye!");
             break;
@@ -72,6 +76,7 @@ string Menu()
     Console.WriteLine("7. Check existence");
     Console.WriteLine("8. Remove one occurrence");
     Console.WriteLine("9. Remove all occurrences");
+    Console.WriteLine("10. Clear list");
     Console.WriteLine("0. Exit");
     Console.Write("Choose an option: ");
     return Console.ReadLine()!;
